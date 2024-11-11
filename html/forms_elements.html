@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Form elements</title>
+</head>
+
+<body>
+    <form action="review.html" method="get" target="_blank">
+
+        <fieldset>
+            <legend>Form Elements</legend>
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="enter your full name" required><br />
+            <label for="phno">Contact number</label>
+            <input type="tel" id="phno" name="phno" placeholder="enter your phone number" maxlength="10"><br />
+            <label for="socialMedia">Social Media</label>
+            <select id="socialMedia" name="socialMedia">
+                <option value="select">--select--</option>
+                <option value="fb">Facebook</option>
+                <option value="wtsp">What's app</option>
+                <option value="insta">Instagram</option>
+            </select>
+            <p>here user can only choose from dropdown list whereas in datalist user can enter input which is not there in list</p>
+
+            
+        </fieldset>
+    </form>
+</body>
+
+</html>

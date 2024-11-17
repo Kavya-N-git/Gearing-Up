@@ -3,14 +3,44 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>HTML Div</title>        
+        <title>HTML Div</title>
+        <style>
+            .divCentering{
+                border: 2px solid red;
+                display: flex;
+                justify-content: center;   /* Center horizontally */
+                align-items: center;       /* Center vertically */
+                height: 10vh;
+                margin-bottom: 20px;
+                
+            }
+        </style>        
     </head>
     <body>
        <p> div is a block level element which means it takes a section of document</p>
        <ul>
         <li>It starts with new line</li><br/>
-        <li>It acquires complete width of </li>
+        <li>It takes up all available width  </li>
        </ul>
-       
+       <h3> here is the example</h3>
+       <div class="demo">
+        <h1 style="background-color: cyan;">Demonstration of div element</h1>
+       </div>
+       <!--centering div-->
+       <div class="divCentering">
+        <h3>hello word</h3>
+       </div>
+       <!--document having multiple divs-->
+       <section id="salad">
+        <div class="chickpea">
+            <img src="../images/Chickpea-Salad.jpg" width="200px" height="200px" alt="chikpea salad">
+        </div>
+        <div class="cucumber">
+            <img src="../images/cucumber-salad.jpg" width="200px" height="200px" alt="cucumber salad">
+        </div>
+        <div class="soya">
+            <img src="../images/soya-salad.jpeg" width="200px" height="200px" alt="soya-salad">
+        </div>
+       </section>
     </body>
 </html>

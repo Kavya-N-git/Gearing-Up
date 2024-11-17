@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        header nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+        .left, .right {
+            width: 25%;
+            padding: 20px;
+            background-color: #f4f4f4;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .center {
+            width: 50%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+            gap: 20px; /* Adjust the gap between items */
+        }
+        .center div {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#recipes">Recipes</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <h1>Healthy Recipes</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Left Section - Today's Recipe -->
+        <section class="left">
+            <article>
+                <h2>Today's Recipe</h2>
+                <h3>Ridge Gourd Stir Fry</h3>
+                <p><strong>Ingredients:</strong> Ridge gourd, onion, garlic, green chilies, mustard seeds, curry leaves, turmeric powder, salt, and oil.</p>
+                <p><strong>Instructions:</strong> Heat oil in a pan, add mustard seeds, curry leaves, and garlic. Add chopped onions and sauté until golden. Add chopped ridge gourd, turmeric, salt, and cook until soft. Serve hot with rice.</p>
+            </article>
+        </section>
+
+        <!-- Center Section - 9 Divs in 3 Rows -->
+        <section class="center">
+            <article>Item 1</article>
+            <article>Item 2</article>
+            <article>Item 3</article>
+            <article>Item 4</article>
+            <article>Item 5</article>
+            <article>Item 6</article>
+            <article>Item 7</article>
+            <article>Item 8</article>
+            <article>Item 9</article>
+        </section>
+
+        <!-- Right Section - Scientific Benefits of Ridge Gourd -->
+        <section class="right">
+            <article>
+                <h2>Scientific Benefits of Ridge Gourd</h2>
+                <p>Ridge gourd, also known as "turai" or "sorakaya," is packed with vital nutrients and is highly regarded for its numerous health benefits. It is low in calories and rich in fiber, vitamins, and minerals. Ridge gourd is excellent for weight management, improves digestion, and promotes skin health. Its high water content helps in keeping the body hydrated, and its anti-inflammatory properties contribute to boosting immunity.</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact Us: email@example.com | Phone: +123 456 7890</p>
+    </footer>
+
+</body>
+</html>
